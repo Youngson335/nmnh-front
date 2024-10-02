@@ -83,6 +83,19 @@ export default {};
   margin-bottom: 47px;
   & p {
     margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #21225b;
+  }
+}
+@media (max-width: 650px) {
+  .about__description {
+    padding: 50px;
+    & p {
+      font-size: 13px;
+      line-height: 16.4px;
+    }
   }
 }
 </style>

@@ -43,6 +43,7 @@ export default {};
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 150px;
+  width: calc(100% - 50px);
 }
 .avatar {
   &__item {
@@ -86,6 +87,19 @@ export default {};
     & p {
       color: #8b8b8b;
     }
+  }
+}
+@media (max-width: 830px) {
+  .avatars {
+    flex-direction: column;
+  }
+  .avatar__item:first-child {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .avatar__item {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>

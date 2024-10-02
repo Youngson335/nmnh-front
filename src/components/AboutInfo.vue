@@ -67,7 +67,6 @@ export default {};
     align-items: center;
     background: linear-gradient(180deg, #eaf1ff 0%, rgba(255, 255, 255, 0) 50%);
     padding-top: 180px;
-    margin-bottom: 100px;
   }
   &__achifka {
     display: inline-block;
@@ -123,6 +122,7 @@ export default {};
     margin-left: 50px;
     & img {
       width: 100%;
+      display: block;
     }
   }
 }
@@ -160,6 +160,50 @@ export default {};
   }
   &__icon {
     margin-right: 15px;
+  }
+}
+@media (max-width: 1060px) {
+  .about {
+    &__image {
+      max-width: 300px;
+    }
+    &__title {
+      & h2 {
+        font-size: 25px;
+        line-height: 31.6px;
+      }
+    }
+    &__text {
+      padding-bottom: 50px;
+    }
+  }
+  .list {
+    &__title {
+      & h3 {
+        font-size: 16px;
+      }
+    }
+    &__description {
+      & p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 950px) {
+  .about {
+    &__info {
+      flex-direction: column;
+    }
+    &__list {
+      margin-bottom: 50px;
+    }
+    &__items {
+      width: calc(100% - 100px);
+    }
+    &__image {
+      margin-left: 0px;
+    }
   }
 }
 </style>

@@ -17,4 +17,25 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="scss">
+.about {
+  position: relative;
+  &__promo {
+    position: relative;
+    bottom: -220px;
+    left: 0;
+    right: 0;
+    padding-left: 70px;
+    max-width: 600px;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 515px) {
+  .about__promo {
+    bottom: -170px;
+  }
+}
+</style>
