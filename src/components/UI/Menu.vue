@@ -73,13 +73,13 @@
 export default {
   data() {
     return {
-      activeItem: "home", // Устанавливаем 'home' как активный элемент по умолчанию
+      activeItem: "home",
     };
   },
   methods: {
     setActive(item) {
-      this.activeItem = item; // Обновляем активный элемент
-      this.emitTitleInfo(item); // Вызываем метод для эмита информации
+      this.activeItem = item;
+      this.emitTitleInfo(item);
     },
     emitTitleInfo(item) {
       let titleInfo = {};
@@ -121,7 +121,7 @@ export default {
           };
           break;
       }
-      this.$emit("getTitleInfo", titleInfo); // Эмитим информацию
+      this.$emit("getTitleInfo", titleInfo);
     },
   },
   mounted() {
@@ -164,6 +164,7 @@ a {
       font-weight: 400;
       text-transform: uppercase;
       color: #21225b;
+      text-wrap: nowrap;
     }
     & .active__item {
       color: #2f33a1;
@@ -173,12 +174,14 @@ a {
     max-width: 160px;
     &--image {
       width: 100%;
+      display: block;
     }
   }
   &__search {
     padding-left: 30px;
     &--image {
       max-width: 30px;
+      display: block;
     }
   }
   &__btn {
@@ -196,6 +199,77 @@ a {
     padding: 17px 33px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  @media (max-width: 1110px) {
+    .menu {
+      &__search {
+        padding-left: 0;
+      }
+      &__logo {
+        max-width: 100px;
+      }
+      &__item {
+        & li {
+          font-size: 13px;
+        }
+      }
+      &__btn {
+        padding: 10px 20px;
+        & button {
+          font-size: 13px;
+        }
+      }
+      &__search--image {
+        max-width: 25px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .menu {
+      &__search {
+        padding-left: 0;
+      }
+      &__logo {
+        max-width: 70px;
+      }
+      &__item {
+        & li {
+          font-size: 12px;
+        }
+      }
+      &__btn {
+        padding: 8px 10px;
+        & button {
+          font-size: 12px;
+        }
+      }
+      &__search--image {
+        max-width: 20px;
+      }
+      &__item {
+        margin-left: 15px;
+      }
+    }
+  }
+  @media (max-width: 760px) {
+    .menu {
+      &__block {
+        flex-direction: column;
+      }
+      &__items {
+        flex-direction: column;
+      }
+      &__item {
+        margin-left: 0px;
+        margin-bottom: 5px;
+      }
+      &__logo {
+        margin-bottom: 8px;
+      }
+      &__search {
+        display: none;
+      }
+    }
   }
 }
 </style>

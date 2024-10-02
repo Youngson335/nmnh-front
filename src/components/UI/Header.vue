@@ -71,5 +71,14 @@ $white: #ffffff;
     opacity: 0.5;
     z-index: 0;
   }
+  @media (max-width: 650px) {
+    .header {
+      &__title {
+        & h1 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
 }
 </style>

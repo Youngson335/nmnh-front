@@ -63,6 +63,7 @@ export default {};
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 124px;
+  width: calc(100% - 50px);
 }
 .user {
   &__end {

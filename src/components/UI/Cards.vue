@@ -64,12 +64,12 @@ export default {};
 .card {
   display: flex;
   justify-content: center;
-  align-items: unset;
+  align-items: start;
   &__child {
     margin-top: 40px;
   }
   &__active {
-    background: #4143a3;
+    background: #4143a3 !important;
     & h5 {
       color: #ffff !important;
     }
@@ -89,6 +89,7 @@ export default {};
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: 30px;
+    background: #ffffff;
     &:first-child {
       margin-left: 0px;
     }
@@ -118,6 +119,21 @@ export default {};
       font-size: 15px;
       font-weight: 400;
       line-height: 22.4px;
+    }
+  }
+}
+@media (max-width: 1130px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    &__child {
+      margin-top: 0px;
+    }
+    &__item {
+      margin-left: 0px;
+      margin-bottom: 20px;
+      width: calc(100% - 100px);
+      max-width: 100%;
     }
   }
 }

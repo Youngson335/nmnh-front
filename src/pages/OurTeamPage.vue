@@ -26,10 +26,13 @@ export default {
 <style lang="scss">
 .our-team {
   margin-top: 63px;
+  position: relative;
   &__aspects {
     margin-bottom: 55px;
   }
   &__cards {
+    position: relative;
+    bottom: -100px;
   }
 }
 .aspects {

@@ -16,6 +16,21 @@ const routes = [
     name: "about",
     component: () => import("../pages/AboutPage.vue"),
   },
+  {
+    path: "/technologies",
+    name: "technologies",
+    component: () => import("../pages/TechnologyPage.vue"),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import("../pages/ContactPage.vue"),
+  },
+  {
+    path: "/aso",
+    name: "aso",
+    component: () => import("../pages/AsoPage.vue"),
+  },
 ];
 
 const router = createRouter({
