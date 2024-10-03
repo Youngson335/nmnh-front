@@ -61,7 +61,8 @@
           alt=""
         />
       </div>
-      <div class="menu__btn">
+
+      <div class="menu__btn" @click="goToForm">
         <button>Get Started</button>
         <img src="../../assets/icons/arrow-icon.svg" alt="" />
       </div>
@@ -80,6 +81,10 @@ export default {
     setActive(item) {
       this.activeItem = item;
       this.emitTitleInfo(item);
+    },
+    goToForm() {
+      this.$router.push("/contact");
+      this.emitTitleInfo("contact");
     },
     emitTitleInfo(item) {
       let titleInfo = {};

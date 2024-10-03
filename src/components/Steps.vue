@@ -40,7 +40,10 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: calc(100% - 100px);
 }
 .step {
   &__arrow {
@@ -76,6 +79,19 @@ export default {};
       line-height: 26.4px;
       text-align: center;
       color: #21225b;
+    }
+  }
+}
+@media (max-width: 690px) {
+  .steps {
+    flex-direction: column;
+  }
+  .step {
+    &__item {
+      margin-bottom: 40px;
+    }
+    &__arrow {
+      display: none;
     }
   }
 }

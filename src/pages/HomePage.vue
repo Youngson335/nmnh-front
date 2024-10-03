@@ -24,6 +24,22 @@
         <img src="../assets/images/steps-image.svg" alt="" />
       </div>
     </div>
+    <div class="home__testing">
+      <Testing />
+    </div>
+    <div class="home__our-projects">
+      <OurProjects />
+    </div>
+    <div class="home__manage-tasks">
+      <ManageTasks />
+    </div>
+    <div class="home__avatars">
+      <Achifka :achifka="'Our TEAM'" class="home__avatars__achifka" />
+      <Avatars />
+    </div>
+    <div class="home__optimization">
+      <OptimizationInfo />
+    </div>
   </div>
 </template>
 <script>
@@ -33,6 +49,11 @@ import Cards from "@/components/UI/Cards.vue";
 import StackBlock from "@/components/StackBlock.vue";
 import AboutInfo from "@/components/AboutInfo.vue";
 import Steps from "@/components/Steps.vue";
+import Testing from "@/components/Testing.vue";
+import OurProjects from "@/components/OurProjects.vue";
+import ManageTasks from "@/components/ManageTasks.vue";
+import Avatars from "@/components/UI/Avatars.vue";
+import OptimizationInfo from "@/components/OptimizationInfo.vue";
 export default {
   components: {
     StartHome,
@@ -41,6 +62,11 @@ export default {
     StackBlock,
     AboutInfo,
     Steps,
+    Testing,
+    OurProjects,
+    ManageTasks,
+    Avatars,
+    OptimizationInfo,
   },
   data() {
     return {
@@ -59,8 +85,29 @@ export default {
   }
   &__info {
   }
+  &__steps {
+    margin-bottom: 130px;
+  }
+  &__testing {
+    margin: 250px 0px;
+  }
   &__about {
     margin-bottom: 90px;
+  }
+  &__our-projects {
+    margin-bottom: 150px;
+  }
+  &__manage-tasks {
+    margin-bottom: 100px;
+  }
+  &__avatars {
+    &__achifka {
+      margin-bottom: 40px;
+    }
+  }
+  &__optimization {
+    position: relative;
+    bottom: -100px;
   }
   &__title {
     display: flex;
@@ -100,5 +147,14 @@ export default {
       max-width: 750px;
     }
   }
+}
+@media (max-width: 700px) {
+  .home {
+    &__optimization {
+      bottom: -50px;
+    }
+  }
+}
+@media (max-width: 455px) {
 }
 </style>
