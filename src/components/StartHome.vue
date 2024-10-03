@@ -23,6 +23,9 @@ export default {};
   max-height: 450px;
   overflow: hidden;
   &__image {
+    & img {
+      width: 100%;
+    }
   }
   &__volna {
     position: absolute;
@@ -31,6 +34,14 @@ export default {};
     & img {
       width: 100%;
       display: block;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .start {
+    &__image {
+      position: relative;
+      bottom: -100px;
     }
   }
 }

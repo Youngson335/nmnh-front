@@ -24,6 +24,7 @@ export default {
     font-weight: 500;
     line-height: 24px;
     color: #4143a3;
+    text-transform: uppercase;
   }
 }
 </style>
