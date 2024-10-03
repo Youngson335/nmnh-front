@@ -25,10 +25,10 @@ export default {};
   &__image {
     & img {
       width: 100%;
+      max-width: 530px;
     }
   }
   &__volna {
-    position: absolute;
     position: absolute;
     bottom: -1px;
     & img {
