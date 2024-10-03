@@ -6,7 +6,7 @@
       </div>
       <div class="avatar__info">
         <div class="info__name">
-          <h3>Belle Fayye</h3>
+          <h3>Ivan Petrov</h3>
         </div>
         <div class="info__job">
           <p>Property Manager</p>
@@ -19,7 +19,7 @@
       </div>
       <div class="avatar__info">
         <div class="info__name">
-          <h3>Jemmy Bones</h3>
+          <h3>Alexander Sokolov</h3>
         </div>
         <div class="info__job">
           <p>Rental Agent</p>

@@ -13,7 +13,7 @@
       <textarea v-model="form.message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p v-if="formSubmitted" class="submission-message">Заявка отправлена</p>
+    <p v-if="formSubmitted" class="submission-message">Your message sended</p>
   </div>
 </template>
 

@@ -2,16 +2,14 @@
   <div class="contact__connection">
     <div class="connection__info">
       <p>
-        International Contact: Phone: +1 (646) 555-7890 Email:
-        contact@globalappdev.com Address: 1234 Park Avenue, Suite 500, New York,
-        NY 10016, USA
+        International Contact: Phone + 7 (495) 523-5644 email: sale@nmnh.top
+        Adress: 123112 Moscow Presnenskaya nab. 8 str
       </p>
     </div>
     <div class="connection__info">
       <p>
-        International Contact: Phone: +1 (646) 555-7890 Email:
-        contact@globalappdev.com Address: 1234 Park Avenue, Suite 500, New York,
-        NY 10016, USA
+        International Contact: Phone +971 56 603-6173 email: sale@nmnh.top
+        Adress: 452C+WJ Dubai Al Sufouh 2
       </p>
     </div>
   </div>
