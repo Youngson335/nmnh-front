@@ -149,6 +149,8 @@ a {
   padding: 60px;
   margin-bottom: 20px;
   &__block {
+    position: relative;
+    z-index: 1000;
     @include default-position(space-between, center);
     background-color: $white;
     color: #21225b;

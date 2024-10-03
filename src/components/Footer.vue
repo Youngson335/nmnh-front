@@ -10,19 +10,20 @@
             <h5>Company</h5>
           </div>
           <div class="block__items">
-            <div class="block__item">
+            <div class="block__item" @click="goToPage('about')">
               <img src="../assets/icons/arrow-icon.svg" alt="" />
               <p>About us</p>
             </div>
-            <div class="block__item">
+
+            <div class="block__item" @click="goToPage('aso')">
               <img src="../assets/icons/arrow-icon.svg" alt="" />
               <p>ASO</p>
             </div>
-            <div class="block__item">
+            <div class="block__item" @click="goToPage('ourteam')">
               <img src="../assets/icons/arrow-icon.svg" alt="" />
               <p>Team</p>
             </div>
-            <div class="block__item">
+            <div class="block__item" @click="goToPage('contact')">
               <img src="../assets/icons/arrow-icon.svg" alt="" />
               <p>Contact Us</p>
             </div>
@@ -33,17 +34,9 @@
             <h5>Pool</h5>
           </div>
           <div class="block__items">
-            <div class="block__item">
+            <div class="block__item" @click="goToPage('technologies')">
               <img src="../assets/icons/arrow-icon.svg" alt="" />
               <p>Technology</p>
-            </div>
-            <div class="block__item">
-              <img src="../assets/icons/arrow-icon.svg" alt="" />
-              <p>Projects</p>
-            </div>
-            <div class="block__item">
-              <img src="../assets/icons/arrow-icon.svg" alt="" />
-              <p>Main Page</p>
             </div>
           </div>
         </div>
@@ -55,7 +48,15 @@
   </footer>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    goToPage(link) {
+      this.$router.push(link).then(() => {
+        window.scrollTo(0, 0);
+      });
+    },
+  },
+};
 </script>
 <style lang="scss">
 .footer {
@@ -113,6 +114,7 @@ export default {};
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
     &:last-child {
       margin-bottom: 0px;
     }

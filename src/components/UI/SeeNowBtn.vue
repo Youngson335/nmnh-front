@@ -1,15 +1,25 @@
 <template>
-  <div class="see-now__button">
+  <div class="see-now__button" @click="goToContact">
     <button>See now</button>
     <img src="../../assets/icons/arrow_blue-icon.svg" alt="" />
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    goToContact() {
+      this.$router.push("/contact").then(() => {
+        window.scrollTo(0, 0);
+      });
+    },
+  },
+};
 </script>
 <style lang="scss">
 .see-now {
   &__button {
+    position: relative;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;

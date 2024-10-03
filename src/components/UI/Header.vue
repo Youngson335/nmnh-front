@@ -26,10 +26,45 @@ export default {
   components: {
     Menu,
   },
+  watch: {
+    $route(to) {
+      this.updateTitleAndDescription(to.path);
+    },
+  },
+  mounted() {
+    this.updateTitleAndDescription(this.$route.path);
+  },
   methods: {
-    getTitleInfo(arr) {
-      this.title = arr.title;
-      this.description = arr.description;
+    updateTitleAndDescription(path) {
+      switch (path) {
+        case "/":
+          this.title = "Success Start With nMNH";
+          this.description = "perfection in one app";
+          break;
+        case "/about":
+          this.title = "About Us";
+          this.description = "The Most Effective App";
+          break;
+        case "/aso":
+          this.title = "App Store Optimization";
+          this.description = "The Most Effective App";
+          break;
+        case "/technologies":
+          this.title = "Our technology";
+          this.description = "The Most Effective App";
+          break;
+        case "/ourteam":
+          this.title = "Our Team";
+          this.description = "The Most Effective App";
+          break;
+        case "/contact":
+          this.title = "Connection";
+          this.description = "The Most Effective App";
+          break;
+        default:
+          this.title = "";
+          this.description = "";
+      }
     },
   },
 };

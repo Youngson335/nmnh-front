@@ -1,5 +1,5 @@
 <template>
-  <div class="discover-more__btn">
+  <div class="discover-more__btn" @click="goToContact">
     <button>{{ btn }}</button>
     <img src="../../assets/icons/arrow-icon.svg" alt="" />
   </div>
@@ -9,6 +9,13 @@ export default {
   props: {
     btn: {
       type: String,
+    },
+  },
+  methods: {
+    goToContact() {
+      this.$router.push("/contact").then(() => {
+        window.scrollTo(0, 0);
+      });
     },
   },
 };
