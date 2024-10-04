@@ -2,7 +2,7 @@
   <div class="contact__connection">
     <div class="connection__info">
       <p>
-        International Contact: Phone + 7 (495) 523-5644 email: sale@nmnh.top
+        International Contact: Phone +7 967 778-54-86 email: sale@nmnh.top
         Adress: 123112 Moscow Presnenskaya nab. 8 str
       </p>
     </div>

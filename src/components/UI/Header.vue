@@ -38,7 +38,8 @@ export default {
     updateTitleAndDescription(path) {
       switch (path) {
         case "/":
-          this.title = "Success Start With nMNH";
+          this.title =
+            "Success Start With nMNH Next-Gen Mobility, Navigating Horizons";
           this.description = "perfection in one app";
           break;
         case "/about":
@@ -85,6 +86,8 @@ $white: #ffffff;
     & h1 {
       color: $white;
       font-size: 48px;
+      max-width: 700px;
+      margin: 0 auto;
     }
   }
   &__description {
